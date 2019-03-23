@@ -14,7 +14,7 @@ WORKDIR /app
 COPY ./app /app
 
 # create the user named user. This user will run processes only
-#RUN adduser -D user
+RUN adduser -D user
 # switch to the new user inside the docker image. If we do not do this, then the default user is the root user
 # this is not recommended, because if the application becomes comprimised, then the attacker would have root access
-#USER user
+USER user
