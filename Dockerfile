@@ -8,7 +8,7 @@ ENV PYTHONUNBUFFERED 1
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
-# create a directory, change location to the directory, and then copy the local machine's app folder into the docker image
+# create the /app directory, change location to the directory, and then copy the local machine's app folder into the docker image
 RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
