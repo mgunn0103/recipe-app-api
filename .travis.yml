@@ -9,4 +9,10 @@ before_script: pip install docker-compose
 
 script:
   - chmod +x manage.py 
+  - pwd
+  - pwd
+  - pwd
+  - ls
+  - ls 
+  - ls
   - docker-compose run app sh -c "python manage.py test && flake8"
