@@ -7,7 +7,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - //code/python_projects/recipe-app-api/app:/app
+      - ./app:/app
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
     
